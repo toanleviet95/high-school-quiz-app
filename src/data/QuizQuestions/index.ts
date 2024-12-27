@@ -1,5 +1,9 @@
-import { topic2 } from './topic2'
 import { topic1 } from './topic1'
+import { topic2 } from './topic2'
+import { topic3 } from './topic3'
+import { topic4 } from './topic4'
+import { topic5 } from './topic5'
+
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -31,4 +35,7 @@ export type Topic = {
 export const quiz: Record<string, Topic> = {
   topic1,
   topic2,
+  topic3,
+  topic4,
+  topic5
 }

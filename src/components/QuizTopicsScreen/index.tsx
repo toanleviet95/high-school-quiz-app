@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 import AppLogo from '../ui/AppLogo'
+import Introduction from '../ui/Introduction';
+import FacebookTag from '../ui/FacebookTag';
+import PDFGuide from '../ui/PDFGuide';
+
 import { useQuiz } from '../../context/QuizContext'
 import { quizTopics } from '../../data/quizTopics'
 import { device } from '../../styles/BreakPoints'
@@ -9,8 +13,10 @@ import {
   HighlightedText,
   LogoContainer,
   PageCenter,
+  DividerWithText,
 } from '../../styles/Global'
 import { ScreenTypes } from '../../types'
+import { ReactComponent as BulbIcon } from '../../assets/icons/bulb.svg'
 
 import Button from '../ui/Button'
 
@@ -84,6 +90,10 @@ const QuizTopicsScreen: React.FC = () => {
   const goToQuizDetailsScreen = () => {
     setCurrentScreen(ScreenTypes.QuizDetailsScreen)
   }
+  
+  const goToAboutUsScreen = () => {
+    setCurrentScreen(ScreenTypes.AboutUsScreen)
+  }
 
   return (
     <PageCenter light justifyCenter>
@@ -110,6 +120,16 @@ const QuizTopicsScreen: React.FC = () => {
           ))}
         </SelectButtonContainer>
         <Button text="Tiếp tục" onClick={goToQuizDetailsScreen} bold />
+        <br />
+        <DividerWithText />
+        <PDFGuide />
+        <br />
+        <Button icon={<BulbIcon />} iconPosition="left" text="Giới thiệu về nhóm" onClick={goToAboutUsScreen} width="400px" />
+        <DividerWithText />
+        <LogoContainer>
+          <Introduction />
+          <FacebookTag />
+        </LogoContainer>
       </CenterCardContainer>
     </PageCenter>
   )

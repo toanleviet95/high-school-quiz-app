@@ -16,6 +16,9 @@ const Label = styled.label`
   font-size: 16px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.themeText};
+  @media ${device.sm} {
+    font-size: 14px;
+  }
 `
 
 

@@ -8,6 +8,9 @@ import QuizDetailsScreen from '../QuizDetailsScreen'
 import QuizTopicsScreen from '../QuizTopicsScreen'
 import ResultScreen from '../ResultScreen'
 import SplashScreen from '../SplashScreen'
+import AboutUsScreen from '../AboutUsScreen'
+import GuidanceScreen from '../GuidanceScreen'
+
 
 function Main() {
   const { currentScreen, setCurrentScreen } = useQuiz()
@@ -19,6 +22,8 @@ function Main() {
   }, [setCurrentScreen])
 
   const screenComponents = {
+    [ScreenTypes.AboutUsScreen]: <AboutUsScreen />,
+    [ScreenTypes.GuidanceScreen]: <GuidanceScreen />,
     [ScreenTypes.QuizTopicsScreen]: <QuizTopicsScreen />,
     [ScreenTypes.QuizDetailsScreen]: <QuizDetailsScreen />,
     [ScreenTypes.QuestionScreen]: <QuestionScreen />,

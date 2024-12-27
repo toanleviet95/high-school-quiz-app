@@ -19,7 +19,7 @@ const ResultScreenContainer = styled.div`
   @media ${device.md} {
     width: 90%;
     margin: 30px auto;
-    padding-top: 40px;
+    padding-top: 120px;
   }
 `
 

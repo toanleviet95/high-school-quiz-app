@@ -12,6 +12,7 @@ interface ButtonTypes {
   disabled?: boolean
   width?: string
   fontSize?: string
+  isMinimizeText?: boolean
 }
 
 const Button: FC<ButtonTypes> = ({
@@ -24,7 +25,8 @@ const Button: FC<ButtonTypes> = ({
   big,
   disabled,
   width,
-  fontSize
+  fontSize,
+  isMinimizeText
 }) => {
   return (
     <ButtonStyle
@@ -35,9 +37,10 @@ const Button: FC<ButtonTypes> = ({
       width={width}
       disabled={disabled}
       fontSize={fontSize}
+      isMinimizeText={isMinimizeText}
     >
       {icon && iconPosition === 'left' && <IconLeft outline={outline}>{icon}</IconLeft>}
-      <span className="minimize-text">{text}</span>
+      <span className={isMinimizeText ? 'minimize-text' : ''}>{text}</span>
       {icon && iconPosition === 'right' && <IconRight outline={outline}>{icon}</IconRight>}
     </ButtonStyle>
   )

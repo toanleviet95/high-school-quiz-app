@@ -10,13 +10,28 @@ type QuizTopic = {
 
 export const quizTopics: QuizTopic[] = [
   {
-    title: 'Bộ câu hỏi số 1',
+    title: 'Nhận biết',
     alias: 'topic1',
     icon: <BulbIcon />,
   },
   {
-    title: 'Bộ câu hỏi số 2',
+    title: 'Tình huống',
     alias: 'topic2',
+    icon: <BulbIcon />,
+  },
+  {
+    title: 'Thông hiểu',
+    alias: 'topic3',
+    icon: <BulbIcon />,
+  },
+  {
+    title: 'Vận dụng',
+    alias: 'topic4',
+    icon: <BulbIcon />,
+  },
+  {
+    title: 'Vận dụng cao',
+    alias: 'topic5',
     icon: <BulbIcon />,
   },
 ]

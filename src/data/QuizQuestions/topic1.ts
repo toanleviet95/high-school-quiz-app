@@ -6,11 +6,11 @@
 import { Topic } from '.'
 
 export const topic1: Topic = {
-  topic: 'Bộ câu hỏi số 1',
+  topic: 'Nhận biết',
   level: 'Trung bình',
   totalQuestions: 25,
   totalScore: 250,
-  totalTime: 600,
+  totalTime: 600, // seconds
   questions: [
     {
       question: "Hiệu ứng tâm lý đám đông thường xảy ra khi nào?",
@@ -125,7 +125,8 @@ export const topic1: Topic = {
       score: 10,
     },
     {
-      question: "Một trong những tác động tiêu cực của hiệu ứng đám đông là:",
+      question:
+        "Một trong những tác động tiêu cực của hiệu ứng đám đông là:",
       choices: [
         "Hành vi của cá nhân sẽ trở nên mạnh mẽ và độc lập hơn.",
         "Mọi người đều làm việc chăm chỉ và hiệu quả.",
@@ -139,8 +140,7 @@ export const topic1: Topic = {
       score: 10,
     },
     {
-      question:
-        "Khi tham gia vào một cuộc thảo luận nhóm, một trong những cách hiệu quả để hạn chế tác động của hiệu ứng đám đông là:",
+      question: "Khi tham gia vào một cuộc thảo luận nhóm, một trong những cách hiệu quả để hạn chế tác động của hiệu ứng đám đông là:",
       choices: [
         "Không bao giờ lên tiếng nếu bạn không đồng ý với nhóm.",
         "Lắng nghe các quan điểm khác và bảo vệ quan điểm của mình nếu cần.",
@@ -148,14 +148,11 @@ export const topic1: Topic = {
         "Không quan tâm đến quan điểm của người khác và chỉ tập trung vào ý kiến của mình.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Lắng nghe các quan điểm khác và bảo vệ quan điểm của mình nếu cần.",
-      ],
+      correctAnswers: ["Lắng nghe các quan điểm khác và bảo vệ quan điểm của mình nếu cần."],
       score: 10,
     },
     {
-      question:
-        "Khi cả lớp đồng lòng tham gia vào một hoạt động tình nguyện, đây là một ví dụ của:",
+      question: "Khi cả lớp đồng lòng tham gia vào một hoạt động tình nguyện, đây là một ví dụ của:",
       choices: [
         "Tác động tiêu cực của hiệu ứng đám đông.",
         "Tác động tích cực của hiệu ứng đám đông.",
@@ -179,8 +176,7 @@ export const topic1: Topic = {
       score: 10,
     },
     {
-      question:
-        "Hiệu ứng đám đông có thể giúp học sinh đạt được kết quả học tập tốt hơn khi:",
+      question: "Hiệu ứng đám đông có thể giúp học sinh đạt được kết quả học tập tốt hơn khi:",
       choices: [
         "Các bạn học cùng nhau và hỗ trợ lẫn nhau trong việc ôn tập cho kỳ thi.",
         "Các bạn đồng loạt bỏ qua việc học và tập trung vào các hoạt động không liên quan.",
@@ -188,9 +184,7 @@ export const topic1: Topic = {
         "Mọi người chỉ làm theo những gì người khác nói mà không suy nghĩ kỹ.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Các bạn học cùng nhau và hỗ trợ lẫn nhau trong việc ôn tập cho kỳ thi.",
-      ],
+      correctAnswers: ["Các bạn học cùng nhau và hỗ trợ lẫn nhau trong việc ôn tập cho kỳ thi."],
       score: 10,
     },
     {
@@ -230,7 +224,7 @@ export const topic1: Topic = {
       score: 10,
     },
     {
-      question: "Một bạn trong lớp nhờ bạn làm bài tập hộ, bạn đó là 'đại ca' của lớp, dù không thích nhưng vì thấy mọi người ai cũng làm theo bạn ấy, thì bạn sẽ làm gì?",
+      question: "Một bạn trong lớp nhờ bạn làm bài tập hộ, bạn đó là “đại ca” của lớp, dù không thích nhưng vì thấy mọi người ai cũng làm theo bạn ấy, thì bạn sẽ làm gì?",
       choices: [
         "Báo với thầy cô",
         "Từ chối vì đây là hành động không đúng",
@@ -238,9 +232,7 @@ export const topic1: Topic = {
         "Làm theo lời bạn ấy nói",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Nói với bạn đây là điều không nên, bạn nên tự làm để cải thiện học tập",
-      ],
+      correctAnswers: ["Nói với bạn đây là điều không nên, bạn nên tự làm để cải thiện học tập"],
       score: 10,
     },
     {
@@ -300,9 +292,7 @@ export const topic1: Topic = {
         "Khi các quyết định được lên kế hoạch từ trước",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Khi cá nhân không có đủ thông tin và chọn làm theo số đông",
-      ],
+      correctAnswers: ["Khi cá nhân không có đủ thông tin và chọn làm theo số đông"],
       score: 10,
     },
     {

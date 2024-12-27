@@ -183,7 +183,7 @@ export const Flex = styled.div<FlexProps>`
 export const CenterCardContainer = styled.div`
   background: ${({ theme }) => theme.colors.cardBackground};
   border-radius: 4px;
-  min-width: 773px;
+  min-width: 900px;
   min-height: 620px;
   padding: 50px 10px 60px 10px;
   display: flex;
@@ -238,4 +238,40 @@ export const SessionHeader = styled.section`
     margin-right: auto;
     left: 0;
     right: 0;
+`
+
+
+export const DividerWithText = styled.div`
+  border: 0;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  width: 80%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 1px solid #ccc;
+    z-index: -1;
+  }
+
+  span {
+    position: absolute;
+    top: -10px;
+    background: white;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #666;
+    z-index: 1;
+  }
+`;
+
+export const HighlightedLink = styled.a<{ themeText?: boolean }>`
+  color: ${({ themeText, theme }) =>
+    themeText ? theme.colors.themeText : theme.colors.themeColor};
+  font-size: 1.2rem;
 `

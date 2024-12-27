@@ -6,11 +6,11 @@
 import { Topic } from '.'
 
 export const topic2: Topic = {
-  topic: 'Bộ câu hỏi số 2',
+  topic: 'Vận dụng',
   level: 'Trung bình',
   totalQuestions: 10,
   totalScore: 100,
-  totalTime: 60,
+  totalTime: 300, // seconds
   questions: [
     {
       question: "Trong lớp học, một nhóm bạn học bắt đầu cười nhạo một bạn học mới vì cách bạn ấy ăn mặc. Bạn thấy việc này không đúng nhưng không muốn bị cô lập, bạn sẽ làm gì?",
@@ -21,9 +21,7 @@ export const topic2: Topic = {
         "Chuyển sang chỗ khác để không phải đối diện với tình huống này.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Lên tiếng bảo vệ bạn học mới và yêu cầu mọi người tôn trọng nhau.",
-      ],
+      correctAnswers: ["Lên tiếng bảo vệ bạn học mới và yêu cầu mọi người tôn trọng nhau."],
       score: 10,
     },
     {
@@ -35,9 +33,7 @@ export const topic2: Topic = {
         "Gửi phản hồi cá nhân cho thầy cô sau giờ học, thay vì nói trước lớp.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Lắng nghe thêm và thử hiểu lý do tại sao các bạn khác đồng ý.",
-      ],
+      correctAnswers: ["Lắng nghe thêm và thử hiểu lý do tại sao các bạn khác đồng ý."],
       score: 10,
     },
     {
@@ -49,9 +45,7 @@ export const topic2: Topic = {
         "Chỉ theo dõi các bình luận mà không tham gia.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Kiểm tra thông tin từ các nguồn đáng tin cậy trước khi chia sẻ.",
-      ],
+      correctAnswers: ["Kiểm tra thông tin từ các nguồn đáng tin cậy trước khi chia sẻ."],
       score: 10,
     },
     {
@@ -63,9 +57,7 @@ export const topic2: Topic = {
         "Tìm thêm thông tin từ các nguồn khác để củng cố quan điểm của mình, rồi mới tham gia vào cuộc thảo luận.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Tìm thêm thông tin từ các nguồn khác để củng cố quan điểm của mình, rồi mới tham gia vào cuộc thảo luận.",
-      ],
+      correctAnswers: ["Tìm thêm thông tin từ các nguồn khác để củng cố quan điểm của mình, rồi mới tham gia vào cuộc thảo luận."],
       score: 10,
     },
     {
@@ -77,9 +69,7 @@ export const topic2: Topic = {
         "Tìm cách rời khỏi bữa tiệc để tránh tình huống này.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Lên tiếng bảo vệ người bị chỉ trích, dù có thể sẽ làm mất lòng một số người.",
-      ],
+      correctAnswers: ["Lên tiếng bảo vệ người bị chỉ trích, dù có thể sẽ làm mất lòng một số người."],
       score: 10,
     },
     {
@@ -91,9 +81,7 @@ export const topic2: Topic = {
         "Giữ im lặng và làm việc riêng.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Nói với nhóm về việc cần tuân thủ quy định và phân công lại công việc.",
-      ],
+      correctAnswers: ["Nói với nhóm về việc cần tuân thủ quy định và phân công lại công việc."],
       score: 10,
     },
     {
@@ -105,9 +93,7 @@ export const topic2: Topic = {
         "Tìm cách hiểu quan điểm của mọi người trước khi đưa ra ý tưởng khác.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Tìm cách hiểu quan điểm của mọi người trước khi đưa ra ý tưởng khác.",
-      ],
+      correctAnswers: ["Tìm cách hiểu quan điểm của mọi người trước khi đưa ra ý tưởng khác."],
       score: 10,
     },
     {
@@ -119,9 +105,7 @@ export const topic2: Topic = {
         "Lặng lẽ bỏ đi và không tham gia.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Lên tiếng bày tỏ quan điểm của mình và khuyên nhóm không nên làm vậy.",
-      ],
+      correctAnswers: ["Lên tiếng bày tỏ quan điểm của mình và khuyên nhóm không nên làm vậy."],
       score: 10,
     },
     {
@@ -133,9 +117,7 @@ export const topic2: Topic = {
         "Tìm cách rời khỏi nhóm và không tham gia vào bất kỳ quyết định nào nữa.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Sau cuộc trò chuyện, bạn sẽ giải thích quan điểm của mình cho nhóm và đề xuất cải thiện.",
-      ],
+      correctAnswers: ["Sau cuộc trò chuyện, bạn sẽ giải thích quan điểm của mình cho nhóm và đề xuất cải thiện."],
       score: 10,
     },
     {
@@ -147,9 +129,7 @@ export const topic2: Topic = {
         "Cố gắng tìm cách thay đổi ý tưởng của nhóm bằng cách nói chuyện với từng người trong nhóm riêng lẻ.",
       ],
       type: "MCQs",
-      correctAnswers: [
-        "Chia sẻ sự lo lắng của mình với nhóm bạn và khuyên họ suy nghĩ kỹ trước khi làm.",
-      ],
+      correctAnswers: ["Chia sẻ sự lo lắng của mình với nhóm bạn và khuyên họ suy nghĩ kỹ trước khi làm."],
       score: 10,
     },
   ]

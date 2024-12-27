@@ -6,17 +6,19 @@ interface ButtonType {
   big?: boolean
   width?: string
   fontSize?: string
+  isMinimizeText?: boolean
 }
 interface SpanType {
   outline?: boolean
 }
 
-export const ButtonStyle = styled.button.attrs(({ outline, bold, big, width, fontSize }: ButtonType) => ({
+export const ButtonStyle = styled.button.attrs(({ outline, bold, big, width, fontSize, isMinimizeText }: ButtonType) => ({
   outline,
   bold,
   big,
   width,
-  fontSize
+  fontSize,
+  isMinimizeText
 }))`
   width: ${({ width }) => (width ? width : '195px')};
   min-height: 50px;
@@ -33,14 +35,18 @@ export const ButtonStyle = styled.button.attrs(({ outline, bold, big, width, fon
   justify-content: center;
   align-items: center;
   @media ${device.md} {
-    width: ${({ big }) => (big ? '180px' : '150px')};
+    max-width: ${({ isMinimizeText }) => (isMinimizeText ? '40px' : '250px')};
     min-height: 40px;
     tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent;
+    .minimize-text {
+      display: none;
+    }
   }
   @media ${device.sm} {
+    max-width: ${({ isMinimizeText }) => (isMinimizeText ? '40px' : '250px')};
     .minimize-text {
-      font-size: 1rem;
+      display: none;
     }
   }
 

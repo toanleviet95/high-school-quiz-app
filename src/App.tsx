@@ -7,9 +7,9 @@ import Main from './components/Main'
 import Login from './components/Login'
 import SplashScreen from './components/SplashScreen'
 
-import ToggleTheme from './components/ui/ToggleTheme'
 import CurrentUser from './components/ui/CurrentUser'
 import Button from './components/ui/Button'
+import MailButton from './components/ui/MailButton';
 
 import QuizProvider from './context/QuizProvider'
 
@@ -18,20 +18,10 @@ import { GlobalStyles, SessionHeader } from './styles/Global'
 import { themes } from './styles/Theme'
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme')
-    return savedTheme || 'light'
-  })
   const [currentUser, setCurrentUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { checked } = e.target
-    setCurrentTheme(checked ? 'dark' : 'light')
-    localStorage.setItem('theme', checked ? 'dark' : 'light')
-  }
-
-  const theme = currentTheme === 'light' ? themes.light : themes.dark
+  const theme = themes.light;
   
   const handleLogout = async () => {
     try {
@@ -58,13 +48,6 @@ function App() {
       <QuizProvider currentUser={currentUser}>
         <SessionHeader>
           {currentUser && <CurrentUser username={currentUser.email || currentUser.phoneNumber || ''} />}
-          <ToggleTheme
-            onChange={toggleTheme}
-            currentTheme={currentTheme}
-            checked={currentTheme === 'dark'}
-            id="toggleTheme"
-            value="theme"
-          />
           {currentUser && <Button
             text="Đăng xuất"
             onClick={handleLogout}
@@ -73,11 +56,13 @@ function App() {
             width="120px"
             iconPosition="left"
             fontSize="16px"
+            isMinimizeText
           />}
         </SessionHeader>
         {isLoading && <SplashScreen />}
         {currentUser ? <Main /> : <Login />}
       </QuizProvider>
+      <MailButton />
     </ThemeProvider>
   )
 }
